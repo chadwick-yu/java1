@@ -19,6 +19,7 @@ public class Car {
     public Car(){
 
     }
+    ///打印出所有的信息
     public void print(){
         System.out.println("车的序号是: "+number);
         System.out.println(car_name);
@@ -46,6 +47,7 @@ public class Car {
     public int getNumber() {
         return number;
     }
+    ///计算总租车价格
     public  static int price(int a,int b,int c,int d,int e,int f,int g,int h,int number){
         int price=(a*40+b*65+c*180+d*30+e*47+f*80+(g+h)*60)*number;
         return price;}

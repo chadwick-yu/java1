@@ -1,6 +1,7 @@
 package Test;
 
 public class Manned extends Car {
+    ///存入实例化成员变量
     private Car car=new Car("car",40,4,0.0,1);
     private Car bread=new Car("bread",65,7,0.0,2);
     private Car bus=new Car("bus",180,20,0.0,3);

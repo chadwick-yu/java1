@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Truck extends Car {
+    ///存入实例化成员变量
     private Car jc=new Car("japanese car",60,5,1.0,7);
     private Car ac=new Car("American car",60,2,3.0,8);
 

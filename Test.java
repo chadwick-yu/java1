@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Test { public static void main(String[] args) throws Exception{
+    ///租各类型车数量存入哈希表
     HashMap<String,Integer> rent=new HashMap<String, Integer>();
     rent.put("car",40);rent.put("bread",65);rent.put("bus",180);rent.put("Low",30);rent.put("High",47);rent.put("Van",180);rent.put("jc",60);rent.put("Ac",60);
     Scanner in=new Scanner(System.in);
@@ -53,7 +54,7 @@ public class Test { public static void main(String[] args) throws Exception{
     }
     System.out.println("您租车的天数为："+number);
     System.out.println("您所租车的最大载人量为："+(number_car[0]*4+number_car[1]*7+number_car[2]*20+number_car[6]*5+number_car[7]*2));
-    System.out.println("您所租车的最大载货量为："+(number_car[3]*1.5+number_car[4]*2.5+number_car[5]*4.5+number_car[6]*1+number_car[6]*3));
+    System.out.println("您所租车的最大载货量为："+(number_car[3]*1.5+number_car[4]*2.5+number_car[5]*4.5+number_car[6]+number_car[6]*3));
     int sum=0;
     for(int i=0;i<number_car.length;i++){sum=sum+number_car[i];}
     System.out.println("您一共租用了："+sum+"辆车");
